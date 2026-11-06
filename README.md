@@ -59,14 +59,13 @@ Jensen top-hat wake velocity deficit (inside the expanding wake):
 
 Wakes reduce downstream hub-height velocity, with magnitude depending on spacing, wind direction, and wake recovery. However, the downstream evolution of a real marine atmospheric boundary layer includes turbulence, shear, temperature, moisture, stratification, air–sea exchanges, gravity waves, and synoptic forcing. An engineering wake model alone cannot quantify surface evaporation, boundary-layer deepening, cloud microphysics, or precipitation.
 
-**Next step toward the TU Delft postdoc research question:** in a validated high-resolution mesoscale atmospheric model (e.g. WRF with a documented wind-farm parameterization), run paired cases with wind-farm effects **off/on**, keeping boundary conditions and initial states identical. For selected atmospheric regimes, diagnose wind, boundary-layer height, TKE, temperature, humidity, vertical velocity, moisture-flux convergence, cloud variables, and accumulated precipitation. Consider background precipitation variability, ensemble sensitivity, case selection using observed offshore precipitation/weather, and sensitivity to turbine parameterization and spatial resolution. Do not attribute any precipitation difference to turbines without appropriate controls and uncertainty analysis.
+**Suggested next research step:** in a validated high-resolution mesoscale atmospheric model (e.g. WRF with a documented wind-farm parameterization), run paired cases with wind-farm effects **off/on**, keeping boundary conditions and initial states identical. For selected atmospheric regimes, diagnose wind, boundary-layer height, TKE, temperature, humidity, vertical velocity, moisture-flux convergence, cloud variables, and accumulated precipitation. Consider background precipitation variability, ensemble sensitivity, case selection using observed offshore precipitation/weather, and sensitivity to turbine parameterization and spatial resolution. Do not attribute any precipitation difference to turbines without appropriate controls and uncertainty analysis.
 
 ## Main files
 
 - `src/wake_model.py`: idealized model and farm diagnostics
 - `experiments/run_experiments.py`: regenerates all figures and CSV
 - `tests/test_wake_model.py`: scientific sanity checks
-- `INTERVIEW_BRIEF.md`: short summary and suggested research roadmap
 
 ## Source concepts / further reading
 
@@ -77,4 +76,4 @@ Wakes reduce downstream hub-height velocity, with magnitude depending on spacing
 
 ## Reproducibility and attribution
 
-All plots and numerical values in this repository were generated with the stated synthetic assumptions. No observational or proprietary wind-farm data are redistributed. This prototype's numerical code and documentation can be modified, reviewed, and improved; cite the established models if developing this further. Published without implied endorsement from TU Delft or any employer.
+All plots and numerical values in this repository were generated with the stated synthetic assumptions. No observational or proprietary wind-farm data are redistributed. This prototype's numerical code and documentation can be modified, reviewed, and improved; cite the established models if developing this further.
